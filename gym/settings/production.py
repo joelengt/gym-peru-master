@@ -1,5 +1,5 @@
-__author__ = 'klaatu'
 from .base import *
+
 ALLOWED_HOSTS = ['159.203.120.218']
 DEBUG = False
 DATABASES = {
@@ -7,8 +7,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'gym',
         'USER': 'postgres',
-        'PASSWORD': 'root',
+        'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432',
-    }
+    },
 }
