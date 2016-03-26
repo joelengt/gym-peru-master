@@ -22,7 +22,7 @@ class Video(models.Model):
         verbose_name_plural = 'Videos'
 
     def __str__(self):
-        return u'{0}'.format(self.url)
+        return u'{0}'.format(self.nombre)
 
 
 class Imagenes(models.Model):
@@ -34,13 +34,13 @@ class Imagenes(models.Model):
         verbose_name_plural = 'Imágenes'
 
     def __str__(self):
-        return u'{0}'.format(self.imagen)
+        return u'{0}'.format(self.nombre)
 
 
 class Blog(models.Model):
     created_at = models.DateTimeField(auto_now=True)
     titulo = models.CharField(max_length=250)
-    slug=models.SlugField()
+    slug=models.SlugField(help_text='No llenar, este campo se llena solo')
     frase = models.CharField(max_length=250)
     imagen_frase = models.ImageField(upload_to='fraseimagen')
     fecha = models.DateField(auto_now=True)

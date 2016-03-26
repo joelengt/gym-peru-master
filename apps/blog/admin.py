@@ -4,6 +4,7 @@ from .models import *
 
 class BlogAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("titulo",)}
+    filter_horizontal = ('imagenes', 'video')
 
 
 admin.site.register(Imagenes)
