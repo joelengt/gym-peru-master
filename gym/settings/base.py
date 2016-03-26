@@ -44,9 +44,12 @@ INSTALLED_APPS = [
     'apps.clases',
     'apps.servicios',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE_CLASSES = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -148,3 +151,4 @@ EMAIL_HOST_USER = 'misterfitnessgym@gmail.com'
 EMAIL_HOST_PASSWORD = 'mister12345'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
+CORS_ORIGIN_ALLOW_ALL = True
