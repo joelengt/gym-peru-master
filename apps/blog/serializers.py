@@ -55,33 +55,32 @@ class ContactanosSerializer(serializers.Serializer):
 
 
 class InvitaSerializer(serializers.Serializer):
-    nombre1 = serializers.CharField(required=True, max_length=30)
-    apellido1 = serializers.CharField(required=True, max_length=30)
+    nombre = serializers.CharField(required=True, max_length=30)
+    apellido = serializers.CharField(required=True, max_length=30)
     email = serializers.EmailField(required=True)
-    dni1 = serializers.CharField(required=True)
+    dni = serializers.CharField(required=True)
     celular = serializers.CharField(required=True)
-    sexo1 = serializers.CharField(required=True)
-    invitar = serializers.BooleanField(required=True)
-    nombre2 = serializers.CharField(required=True, max_length=30)
-    apellido2 = serializers.CharField(required=True, max_length=30)
-    dni2 = serializers.CharField(required=True)
-    sexo2 = serializers.CharField(required=True)
+    sexo = serializers.CharField(required=True)
+    invitar = serializers.BooleanField(required=False)
+    nombre_invitado = serializers.CharField(required=False,max_length=30)
+    apellido_invitado = serializers.CharField(required=False,max_length=30)
+    dni_invitado = serializers.CharField(required=False)
+    sexo_invitado = serializers.CharField(required=False)
 
     def send_mail(self):
         send_mail('Contacto',
                   ''''
-                        Nombre1: {} {}
+                        Nombre: {} {}
                         Email: {}
-                        DNI1: {}
+                        DNI: {}
                         Celular: {}
-                        Sexo1: {}
-                        Nombre2: {} {}
-                        DNI2: {}
-                        Sexo2: {}
-                        '''.format(self.validated_data.get('nombre1'), self.validated_data.get('apellido1'),
-                                   self.validated_data.get('email'), self.validated_data.get('dni1'),
-                                   self.validated_data.get('celular'), self.validated_data.get('sexo1'),
-                                   self.validated_data.get('nombre2'), self.validated_data.get('apellido2'),
-                                   self.validated_data.get('dni2'), self.validated_data.get('sexo1'),
-                                   self.validated_data.get('mensaje')),
+                        Sexo: {}
+                        Nombre Invitado: {} {}
+                        DNI Invitado: {}
+                        Sexo Invitado: {}
+                        '''.format(self.validated_data.get('nombre'), self.validated_data.get('apellido'),
+                                   self.validated_data.get('email'), self.validated_data.get('dni'),
+                                   self.validated_data.get('celular'), self.validated_data.get('sexo'),
+                                   self.validated_data.get('nombre_invitado'), self.validated_data.get('apellido_invitado'),
+                                   self.validated_data.get('dni_invitado'), self.validated_data.get('sexo_invitado')),
                   self.validated_data.get('email'), ['misterfitnessgym@gmail.com'], fail_silently=False)

@@ -39,6 +39,7 @@ class ContactanosAPIView(generics.GenericAPIView):
         serializer.send_mail()
         return Response(status=status.HTTP_200_OK)
 
+
 class InvitaAPIView(generics.GenericAPIView):
     serializer_class = InvitaSerializer
 
@@ -46,4 +47,4 @@ class InvitaAPIView(generics.GenericAPIView):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.send_mail()
-        return Response(status=status.HTTP_200_OK)
+        return Response( status=status.HTTP_200_OK)
