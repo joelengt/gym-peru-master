@@ -14,7 +14,7 @@ class Ruleta(models.Model):
 
 
 class Video(models.Model):
-    nombre = models.CharField(max_length=50,unique=True)
+    nombre = models.CharField(max_length=50, unique=True)
     url = models.URLField()
 
     class Meta:
@@ -26,7 +26,7 @@ class Video(models.Model):
 
 
 class Imagenes(models.Model):
-    nombre = models.CharField(max_length=50,unique=True)
+    nombre = models.CharField(max_length=50, unique=True)
     imagen = models.ImageField(upload_to='imagenes')
 
     class Meta:
@@ -40,18 +40,18 @@ class Imagenes(models.Model):
 class Blog(models.Model):
     created_at = models.DateTimeField(auto_now=True)
     titulo = models.CharField(max_length=250)
-    slug=models.SlugField(help_text='No llenar, este campo se llena solo')
+    slug = models.SlugField(help_text='No llenar, este campo se llena solo')
     frase = models.CharField(max_length=250)
     imagen_frase = models.ImageField(upload_to='fraseimagen')
     fecha = models.DateField(auto_now=True)
     categoria = models.CharField(max_length=40, choices=(
         ('Actualidad', 'Actualidad'), ('Fitnes', 'Fitnes'), ('Nutricion', 'Nutrición')))
     contenido = HTMLField()
-    video = models.ManyToManyField(Video, related_name='videos')
+    video = models.ManyToManyField(Video, related_name='videos', blank=True, null=True)
     facebook = models.URLField(null=True, blank=True)
     mas_info = models.URLField(null=True, blank=True)
-    imagenes = models.ManyToManyField(Imagenes, related_name='imagenes')
-    instagram = models.URLField(null=True,blank=True)
+    imagenes = models.ManyToManyField(Imagenes, related_name='imagenes',null=True,blank=True)
+    instagram = models.URLField(null=True, blank=True)
 
     class Meta:
         ordering = ('-created_at',)
@@ -59,4 +59,4 @@ class Blog(models.Model):
         verbose_name = 'Blog'
 
     def __str__(self):
-        return u'{0}--{1}'.format(self.titulo,self.slug)
+        return u'{0}--{1}'.format(self.titulo, self.slug)

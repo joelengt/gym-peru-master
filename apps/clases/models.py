@@ -3,6 +3,7 @@ from django.db import models
 
 class Clases(models.Model):
     lema = models.CharField(max_length=250)
+    imagen = models.ImageField(upload_to='clases')
 
     class Meta:
         verbose_name = 'Clase'
@@ -12,14 +13,22 @@ class Clases(models.Model):
         return u'{0}'.format(self.lema)
 
 
+class Horas(models.Model):
+    hora = models.CharField(max_length=30, help_text='ejemplo de formato en 24 horas (14:00 - 16:00)')
+
+    def __str__(self):
+        return u'{0}'.format(self.hora)
+
+
 class Dia(models.Model):
+    nombre = models.CharField(max_length=30)
     dia = models.CharField(max_length=10, choices=(
         ('Lunes', 'Lunes'), ('Martes', 'Martes'), ('Miercoles', 'Miércoles'), ('Jueves', 'Jueves'),
         ('Viernes', 'Viernes'), ('Sabado', 'Sábado'), ('Domingo', 'Domingo')))
-    horas = models.CharField(max_length=30)
+    horas = models.ManyToManyField(Horas, related_name='dhoras')
 
     def __str__(self):
-        return u'{0}-{1}'.format(self.dia, self.horas)
+        return u'{0}-{1}'.format(self.dia, self.nombre)
 
 
 class Horario(models.Model):
@@ -36,6 +45,7 @@ class DeportesDeContacto(models.Model):
         ("KING BOXING", "KING BOXING"), ("MUAY THAI", "MUAY THAI"), ('CAPOEIRA', 'CAPOEIRA')), unique=True)
     descripcion = models.TextField()
     horario = models.ManyToManyField(Horario, related_name='dhorarios', null=True, blank=True)
+    imagen = models.ImageField(upload_to='deportes')
 
     def __str__(self):
         return u'{0}'.format(self.tipo)
@@ -49,6 +59,7 @@ class Aerobicos(models.Model):
                             unique=True)
     descripcion = models.TextField()
     horario = models.ManyToManyField(Horario, related_name='ahorarios', null=True, blank=True)
+    imagen = models.ImageField(upload_to='aerobicos')
 
     def __str__(self):
         return u'{0}'.format(self.tipo)
@@ -60,6 +71,7 @@ class Talleres(models.Model):
                             unique=True)
     descripcion = models.TextField()
     horario = models.ManyToManyField(Horario, related_name='thorarios', null=True, blank=True)
+    imagen = models.ImageField(upload_to='talleres')
 
     class Meta:
         verbose_name_plural = 'Talleres'
@@ -71,12 +83,10 @@ class Talleres(models.Model):
 
 class BestCyclng(models.Model):
     tipo = models.CharField(max_length=30, choices=(("PRINCIPAL", "PRINCIPAL"), ('SPINNING', 'SPINNING'),
-                                                    ('SPINNINGFU', 'SPINNING TRABAJO DE FUERZA'),
-                                                    ('SPINNINGI', 'SPINNING TRABAJO DE INTERVALO'),
-                                                    ('SPINNINGFO', 'SPINNING TRABAJO DE FONDO'),
                                                     ('BESET CYCLING', 'BEST CYCLING')), unique=True)
     descripcion = models.TextField()
     horario = models.ManyToManyField(Horario, related_name='bhorarios', null=True, blank=True)
+    imagen = models.ImageField(upload_to='best')
 
     def __str__(self):
         return u'{0}'.format(self.tipo)
