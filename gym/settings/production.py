@@ -12,3 +12,7 @@ DATABASES = {
         'PORT': '5432',
     },
 }
+STATIC_URL = '/static/'
+ADMINS = (
+    ('Erik Admin', 'erikd.guiba@gmail.com'),
+)
