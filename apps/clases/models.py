@@ -40,6 +40,7 @@ class Horario(models.Model):
 
 
 class DeportesDeContacto(models.Model):
+    titulo=models.CharField(max_length=40,default="Deportes de Contacto")
     tipo = models.CharField(max_length=30, choices=(
         ("PRINCIPAL", "PRINCIPAL"), ("KARATE", "KARATE"), ("BOXEO", "BOXEO"), ("MMA WORKOUT", "MMA WORKOUT"),
         ("KING BOXING", "KING BOXING"), ("MUAY THAI", "MUAY THAI"), ('CAPOEIRA', 'CAPOEIRA')), unique=True)
@@ -52,6 +53,7 @@ class DeportesDeContacto(models.Model):
 
 
 class Aerobicos(models.Model):
+    titulo=models.CharField(max_length=15,default="Aerobicos")
     tipo = models.CharField(max_length=30, choices=(
         ("PRINCIPAL", "PRINCIPAL"), ('X-BOX', 'X-BOX'), ('FULL DAY', 'FULL DAY'), ('E-FITH', 'E-FITH'),
         ('AERODANCE', 'AERODANCE'), ('BODY-FIT', 'BODY-FIT'), ('BAILE', 'BAILE'), ('LOCALIZADO', 'LOCALIZADO'),
@@ -66,6 +68,7 @@ class Aerobicos(models.Model):
 
 
 class Talleres(models.Model):
+    titulo=models.CharField(max_length=15,default="Talleres")
     tipo = models.CharField(max_length=30, choices=(("PRINCIPAL", "PRINCIPAL"), ('BAILE MODERNO', 'BAILE MODERNO'),
                                                     ('FULL BODY KIDS', 'FULL BODY KIDS'), ('MARINERA', 'MARINERA')),
                             unique=True)
@@ -82,6 +85,7 @@ class Talleres(models.Model):
 
 
 class BestCyclng(models.Model):
+    titulo=models.CharField(max_length=20,default="Bestcycling")
     tipo = models.CharField(max_length=30, choices=(("PRINCIPAL", "PRINCIPAL"), ('SPINNING', 'SPINNING'),
                                                     ('BESET CYCLING', 'BEST CYCLING')), unique=True)
     descripcion = models.TextField()

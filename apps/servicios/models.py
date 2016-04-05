@@ -10,6 +10,7 @@ class Servicio(models.Model):
 
 
 class Entrenar(models.Model):
+    titulo=models.CharField(max_length=20,default="Entrenar")
     lema = models.CharField(max_length=250)
     contenido1 = models.TextField()
     contenido2 = models.TextField()
@@ -24,6 +25,7 @@ class Entrenar(models.Model):
 
 
 class Nutricion(models.Model):
+    titulo=models.CharField(max_length=20,default="Nutricion")
     lema = models.CharField(max_length=250)
     contenido1 = models.TextField()
     contenido2 = models.TextField()
@@ -39,6 +41,7 @@ class Nutricion(models.Model):
 
 
 class Convenio(models.Model):
+    titulo=models.CharField(max_length=20,default="Convenio")
     lema = models.CharField(max_length=250)
     contenido1 = models.TextField()
     contenido2 = models.TextField()
