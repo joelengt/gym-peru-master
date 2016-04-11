@@ -128,13 +128,23 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_URL = '/static/'
 SUIT_CONFIG = {
     'ADMIN_NAME': 'GYM ADMIN CONFIGURATION',
 }
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
 '''TINYMCE_JS_URL = os.path.join(MEDIA_URL, "tiny_mce.js")
 TINYMCE_JS_ROOT = os.path.join(MEDIA_URL, "tiny_mce/tiny_mce_src.js")
 TINYMCE_DEFAULT_CONFIG = {

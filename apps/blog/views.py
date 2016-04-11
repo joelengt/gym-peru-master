@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
+from django.views.generic.base import TemplateView
 from rest_framework import generics, filters, status
 from rest_framework.response import Response
 from apps.blog.serializers import ContactanosSerializer, InvitaSerializer
@@ -47,4 +48,31 @@ class InvitaAPIView(generics.GenericAPIView):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.send_mail()
-        return Response( status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_200_OK)
+
+
+class IndexView(TemplateView):
+    template_name = 'index.html'
+
+
+class ServiciosView(TemplateView):
+    template_name = 'servicios.html'
+
+
+class ServiciosInteriorView(TemplateView):
+    template_name = 'serviciointerior.html'
+
+class BlogView(TemplateView):
+    template_name = 'blog.html'
+
+
+class ClasesView(TemplateView):
+    template_name = 'clases.html'
+
+
+class ContactanosView(TemplateView):
+    template_name = 'contacto.html'
+
+
+class VisitanosView(TemplateView):
+    template_name = 'visitanos.html'

@@ -14,7 +14,7 @@ class ServicioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Servicio
         fields = (
-        'id', 'lema', 'nutricion_lema', 'nutricion_imagen', 'convenio_lema', 'convenio_imagen', 'entrenar_lema',
+        'id', 'lema','imagen', 'nutricion_lema', 'nutricion_imagen', 'convenio_lema', 'convenio_imagen', 'entrenar_lema',
         'entrenar_imagen')
 
     def get_nutricion_lema(self, obj):
