@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mister Fitness</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/app.min.css' %}" media="screen,projection">
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bxslider.js' %}"></script>
+    <script src="{% static 'js/viewportchecker.js' %}"></script>
+    <script src="{% static 'js/app.min.js' %}"></script>
+</head>
+<body>
+  <header class="header" role="navigation">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="clearfix">
+      <a class="h_logo" href="{%   url 'index' %}"></a>
+      <div class="nav_color">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav nav_gym">
+                    <li><a href="{% url 'servicios' %}">Servicios</a></li>
+                    <li><a href="{% url 'clases' %}">Clases</a></li>
+                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="{% url 'visitanos' %}">Visitanos</a></li>
+                    <li><a href="{% url 'contactanos' %}">Contactanos</a></li>
+                </ul>
+            </div>
+        </div>
+      </div> 
+    </div>
+  </header>
+  <blog></blog>
+  <footer class="footer">
+    <div class="footer-bottom">
+      <h5 class="copy-right">© 2016 Mister Fitness. Todos los derechos reservados. Diseñado por Agencia Digital Coder</h5>
+    </div>
+  </footer>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
