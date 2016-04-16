@@ -14583,7 +14583,7 @@ exports.default = {
 
   methods: {
     blogHome: function blogHome() {
-      var _url = 'http://159.203.120.218/api/home/';
+      var _url = 'http://127.0.0.1:8000/api/home/';
       this.$http({
         url: _url,
         method: 'GET'
@@ -14648,7 +14648,7 @@ exports.default = {
 
   methods: {
     getBlog: function getBlog() {
-      var _url = 'http://159.203.120.218/api/blog/' + this.id_blog + '/' + this.slug_blog;
+      var _url = 'http://127.0.0.1:8000/api/blog/' + this.id_blog + '/' + this.slug_blog;
       console.log(_url);
       this.$http({
         url: _url,
@@ -14697,7 +14697,7 @@ exports.default = {
 
     fetchBrand: function fetchBrand() {
       //var _url = 'http://tienda-hero.herokuapp.com/api/brand/'
-      var _url = 'http://159.203.120.218/api/clases/';
+      var _url = 'http://127.0.0.1:8000/api/clases/';
       this.$http({
         url: _url,
         method: 'GET'
@@ -14747,7 +14747,7 @@ exports.default = {
   methods: {
 
     getClassInt: function getClassInt() {
-      var _url = 'http://159.203.120.218/api/' + this.class_name + '/' + this.class_id + '/' + this.class_type;
+      var _url = 'http://127.0.0.1:8000/api/' + this.class_name + '/' + this.class_id + '/' + this.class_type;
       this.$http({
         url: _url,
         method: 'GET'
@@ -14815,7 +14815,7 @@ exports.default = {
   methods: {
 
     fetchBrand: function fetchBrand() {
-      var _url = 'http://159.203.120.218/api/' + this.name_class;
+      var _url = 'http://127.0.0.1:8000/api/' + this.name_class;
       this.$http({
         url: _url,
         method: 'GET'
@@ -14872,7 +14872,7 @@ exports.default = {
 
     onSubmitForm: function onSubmitForm(e) {
       e.preventDefault();
-      var _url = 'http://159.203.120.218/api/contactanos/';
+      var _url = 'http://127.0.0.1:8000/api/contactanos/';
       if (this.afiliado == 'si') {
         this.contact.afiliado = true;
       } else if (this.afiliado == 'no') {
@@ -14932,7 +14932,7 @@ exports.default = {
 
   methods: {
     sliders: function sliders() {
-      var _url = 'http://159.203.120.218/api/ruleta/';
+      var _url = 'http://127.0.0.1:8000/api/ruleta/';
       this.$http({
         url: _url,
         method: 'GET'
@@ -14945,7 +14945,7 @@ exports.default = {
     },
 
     blogHome: function blogHome() {
-      var _url = 'http://159.203.120.218/api/home/';
+      var _url = 'http://127.0.0.1:8000/api/home/';
       this.$http({
         url: _url,
         method: 'GET'
@@ -15011,7 +15011,7 @@ exports.default = {
 
     fetchBrand: function fetchBrand() {
       console.log(this.base_url);
-      var _url = 'http://159.203.120.218/api/servicios/';
+      var _url = 'http://127.0.0.1:8000/api/servicios/';
       this.$http({
         url: _url,
         method: 'GET'
@@ -15065,7 +15065,7 @@ exports.default = {
       this.type_service = slug;
       console.log(this.type_service);
       console.log(slug[slug.length - 2]);
-      var _url = 'http://159.203.120.218/api/' + slug[slug.length - 2];
+      var _url = 'http://127.0.0.1:8000/api/' + slug[slug.length - 2];
       this.$http({
         url: _url,
         method: 'GET'
@@ -15125,7 +15125,7 @@ exports.default = {
 
     onSubmitForm: function onSubmitForm(e) {
       e.preventDefault();
-      var _url = 'http://159.203.120.218/api/invita/';
+      var _url = 'http://127.0.0.1:8000/api/invita/';
 
       console.log(this.usuario);
       if (this.usuario.invitar) {
