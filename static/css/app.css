@@ -10232,7 +10232,7 @@ body {
 .mpedido {
   width: 346px;
   background-color: #00A19B;
-  border: 10px 0 0 0;
+  border: 0;
   padding: 40px 20px;
   text-align: center;
   color: #fff;
@@ -10253,7 +10253,7 @@ body {
   border: 0;
   height: auto;
   margin: 0 auto;
-  padding: 0;
+  padding: 10px 0 0 0;
   background-color: #000;
   -webkit-transition: all .15s;
   transition: all .15s;
