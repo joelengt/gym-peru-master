@@ -11453,7 +11453,7 @@ body {
   font-weight: 200;
   margin: 0 auto;
 }
-.section-service .b_link .nav_link > li a .b_cell .b_text p {
+.b_cell .b_text p {
   margin: 0;
 }
 .section-service .b_link .nav_link > li a .b_cell .b_text h4 {
