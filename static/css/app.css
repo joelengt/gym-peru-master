@@ -11284,6 +11284,10 @@ body {
   font-weight: 500;
   margin-top: 50px;
 }
+.section-free .b_form .content_form form{
+  width: 90%;
+  margin: 0 auto;
+}
 .section-free .b_form .content_form .b_block {
   width: 100%;
   margin: 0 auto;
@@ -11354,6 +11358,9 @@ body {
   }
   .section-free .b_form {
     padding: 70px 0;
+  }
+  .section-free .b_form .content_form form{
+    width: 100%;
   }
   .section-free .b_form .b_description {
     font-size: 22px;
