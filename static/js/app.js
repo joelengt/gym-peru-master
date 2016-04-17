@@ -1,9 +1,22 @@
 $(function(){
-
-  $('#apple-crsl').carousel({
-    interval: 0,
-    pause: false,
+  $("#apple-crsl .b_indicators .carousel-inner").slidesjs({
+    width: 940,
+    height: 350,
+    navigation: {
+      active: false
+    },
+    play: {
+      active: false,
+      auto: true,
+      effect: 'slide',
+      interval: 3000,
+    }
   });
+
+  // $('#apple-crsl').carousel({
+  //   interval: 0,
+  //   pause: false,
+  // });
 
 
   $('.effect').viewportChecker({
