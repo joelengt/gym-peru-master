@@ -11456,6 +11456,11 @@ body {
 .section-service .b_link .nav_link > li a .b_cell .b_text p {
   margin: 0;
 }
+.section-service .b_link .nav_link > li a .b_cell .b_text h4 {
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 200;
+}
 .section-service .b_link .nav_link > li + li {
   margin-top: 15px;
 }
