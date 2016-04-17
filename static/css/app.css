@@ -3495,9 +3495,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: none;
   }
 }
-.navbar-nav {
-  margin: 7.5px -15px;
-}
 
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -10963,11 +10960,18 @@ body {
 .section-home .b_blog .b_header .border .dropdown button:hover, .section-home .b_blog .b_header .border .dropdown button:focus {
   background-color: transparent;
   outline: 0;
+  cursor: pointer;
 }
 .section-home .b_blog .b_header .border .dropdown .dropdown-menu {
   right: 0;
   left: auto;
   padding: 0;
+}
+.section-home .b_blog .b_header .border .dropdown .dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+.section-home .b_blog .b_header .border .dropdown .dropdown-menu li {
 }
 .section-home .b_blog .b_header .border .dropdown .dropdown-menu > li.active {
   background-color: #ffca00;
@@ -11034,11 +11038,11 @@ body {
   left: 10px;
   font-size: 12px;
   top: 4px;
-  z-index: 999;
+  z-index: 70;
 }
 .section-home .b_blog .b_news .nav_news > li a .b_cell {
   position: relative;
-  z-index: 99;
+  z-index: 70;
   background-color: rgba(0, 0, 0, 0.5);
   display: table-cell;
   vertical-align: middle;
