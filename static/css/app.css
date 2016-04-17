@@ -4815,14 +4815,15 @@ button.close {
 
 .carousel-control .icon-next:before {
   content: '\203a';
-}
+} 
 
 .carousel-indicators {
+  margin: 0 auto 16px 0;
+  right: 0;
+  left: 0;
   position: absolute;
-  bottom: 0;
-  z-index: 15;
   padding-left: 0;
-  text-align: center;
+  z-index: 15;
   list-style: none;
 }
 
@@ -10245,7 +10246,8 @@ body {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 99;
   width: 100%;
   border: 0;
   height: auto;
@@ -10515,10 +10517,7 @@ body {
   text-align: center;
 }
 .carousel .b_indicators .carousel-indicators {
-  display: inline-block;
-  *display: inline;
   zoom: 1;
-  float: none;
 }
 .carousel .b_indicators .carousel-indicators > li {
   border: 2px solid #000;

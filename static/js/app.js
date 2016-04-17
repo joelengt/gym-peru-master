@@ -13,12 +13,6 @@ $(function(){
     }
   });
 
-  // $('#apple-crsl').carousel({
-  //   interval: 0,
-  //   pause: false,
-  // });
-
-
   $('.effect').viewportChecker({
     classToAdd: 'moveAnimation',
     offset: 150
