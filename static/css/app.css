@@ -11038,7 +11038,7 @@ body {
   left: 10px;
   font-size: 12px;
   top: 4px;
-  z-index: 70;
+  z-index: 80;
 }
 .section-home .b_blog .b_news .nav_news > li a .b_cell {
   position: relative;
