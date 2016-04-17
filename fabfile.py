@@ -3,7 +3,7 @@ from fabric.api import *
 from fabric.colors import green
 
 env.user = 'admin'
-env.host_string = '159.203.120.218'
+env.host_string = '162.243.198.204'
 env.password = 'ascentperu'
 home_path = "/home/admin"
 settings = "--settings='gym.settings.production'"
