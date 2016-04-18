@@ -79,3 +79,6 @@ class VisitanosView(TemplateView):
 
 class ClasesInterior2View(TemplateView):
     template_name = 'clasesinterior2.html'
+
+class BlogInteriorView(TemplateView):
+    template_name = 'bloginterior.html'
