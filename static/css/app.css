@@ -10467,22 +10467,10 @@ body {
 }
 .footer .footer-bottom .copy-right {
   margin: 0;
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 200;
+  font-size: 16px;
   padding: 12px 0;
   letter-spacing: 1px;
-}
-
-@media (min-width: 768px) {
-  .footer .footer-bottom .copy-right {
-    font-size: 16px;
-  }
-}
-@media (min-width: 992px) {
-  .footer .footer-bottom .copy-right {
-    padding: 14px 0;
-    font-size: 20px;
-  }
 }
 body {
   -webkit-backface-visibility: hidden;
@@ -10708,11 +10696,11 @@ body {
   color: #fff;
   left: 10px;
   top: 4px;
-  z-index: 999;
+  z-index: 80;
 }
 .section-blog .b_blog .b_news .nav_news > li a .b_cell, .section-blog .b_blog .b_news .nav_news > li button .b_cell {
   position: relative;
-  z-index: 99;
+  z-index: 70;
   background-color: rgba(0, 0, 0, 0.5);
   display: table-cell;
   vertical-align: middle;
@@ -11465,8 +11453,9 @@ body {
 }
 .section-service .b_link .nav_link > li a .b_cell .b_text h4 {
   text-decoration: underline;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 24px;
+  font-weight: 500;
+
 }
 .section-service .b_link .nav_link > li + li {
   margin-top: 15px;
@@ -11726,7 +11715,7 @@ body {
   }
   .section-service .b_banner .b_cell h1 {
     padding: 30px 0;
-    font-size: 120px;
+    font-size: 70px;
   }
   .section-service .b_link .b_hours .content {
     width: 975px;
