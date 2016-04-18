@@ -65,7 +65,6 @@ class ServiciosInteriorView(TemplateView):
 class BlogView(TemplateView):
     template_name = 'blog.html'
 
-
 class ClasesView(TemplateView):
     template_name = 'clases.html'
 
@@ -74,7 +73,6 @@ class ClasesInteriorView(TemplateView):
 
 class ContactanosView(TemplateView):
     template_name = 'contacto.html'
-
 
 class VisitanosView(TemplateView):
     template_name = 'visitanos.html'

@@ -14,5 +14,5 @@ urlpatterns = [
     url(r'^deportes-de-contacto/(?P<pk>\d+)/(?P<tipo>[\w-]+)/$', RetrieveDeporteDeContactoAPIView.as_view()),
     url(r'^bestcicling/(?P<pk>\d+)/(?P<tipo>[\w-]+)/$', RetrieveBestCyclingAPIView.as_view()),
     url(r'^aerobicos/(?P<pk>\d+)/(?P<tipo>[\w-]+)/$', RetrieveAerobicosAPIView.as_view()),
-    url(r'^talleres/(?P<pk>\d+)(?P<tipo>[\w-]+)/$', RetrieveTalleresAPIView.as_view()),
+    url(r'^talleres/(?P<pk>\d+)/(?P<tipo>[\w-]+)/$', RetrieveTalleresAPIView.as_view()),
 ]

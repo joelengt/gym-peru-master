@@ -14736,19 +14736,34 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
 
-  props: ['class_name', 'class_id', 'class_type'],
+  //props: ['class_name', 'class_id', 'class_type'],
 
   data: function data() {
     return {
-      classInt: {}
+      classInt: {},
+      class_name: '',
+      class_id: '',
+      class_type: ''
     };
   },
   created: function created() {
-    this.getClassInt();
+    this.class_id_name();
+    //this.getClassInt();
   },
 
-
   methods: {
+    class_id_name: function class_id_name() {
+      var slug = window.location.href.split('/')
+      console.log(slug)
+      
+      this.class_name = slug[slug.length - 2]
+      this.class_id = slug[slug.length - 1]
+      this.class_type = 'gym'
+
+      console.log("className: " + this.class_name)
+      console.log("classId: " + this.class_id)
+      this.getClassInt()
+    },
 
     getClassInt: function getClassInt() {
       var _url = '/api/' + this.class_name + '/' + this.class_id + '/' + this.class_type;
