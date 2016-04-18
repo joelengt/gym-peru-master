@@ -14835,7 +14835,8 @@ exports.default = {
   data: function data() {
     return {
       classList: [],
-      name_class: ''
+      name_class: '',
+      classTop: ''
     };
   },
   created: function created() {
@@ -14862,22 +14863,14 @@ exports.default = {
 
         var Data = success.data
         
-        //var New_arr = []
+        var New_arr = []
 
+        for (var i = Data.length - 1 ; i >= 1; i--) {
+            New_arr[i - 1] = Data[i]
+        }
 
-        //for (var i = Data.length - 1 ; i >= 1; i--) {
-         // New_arr[i] = Data[i]
-        //}
-
-        //console.log(New_arr)
-
-        //for (var i = 1 ; i <= New_arr.length - 1; i++) {
-          //console.log(New_arr[i]);
-        //}
-
-        this.classList = Data;
-
-        //console.log(this.classList)
+        this.classList = New_arr;
+        this.classTop = success.data[0]
 
       }, function (error) {
         console.log(error);
@@ -14887,7 +14880,7 @@ exports.default = {
 
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-service carousel\">\n  <div class=\"b_banner b_border\" style=\"background-image: url({{ classList[0].imagen }})\">\n    <div class=\"b_cell\">\n      <h1> {{ classList[0].titulo }} </h1>\n    </div>\n  </div>\n  <div class=\"b_link\">\n    <div class=\"b_subtitle\">\n      <h2>\"{{ classList[0].descripcion }}\"</h2>\n    </div>\n    <ul class=\"nav nav_link\">\n      <li v-for=\"class of classList\">\n        <a href=\"/clases/{{ name_class }}/{{ class.id }}\" :style=\"'background-image: url('+class.imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>{{ class.tipo }}</h3>\n            <div class=\"b_text\">\n              <p>{{ class.descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <div class=\"b_text\">\n            <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          </div>\n          <a class=\"alink\" href=\"contacto.html\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"../../static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-service carousel\">\n  <div class=\"b_banner b_border\" style=\"background-image: url({{ classTop.imagen }})\">\n    <div class=\"b_cell\">\n      <h1> {{ classTop.titulo }} </h1>\n    </div>\n  </div>\n  <div class=\"b_link\">\n    <div class=\"b_subtitle\">\n      <h2>\"{{ classTop.descripcion }}\"</h2>\n    </div>\n    <ul class=\"nav nav_link\">\n      <li v-for=\"class of classList\">\n        <a href=\"/clases/{{ name_class }}/{{ class.id }}\" :style=\"'background-image: url('+class.imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>{{ class.tipo }}</h3>\n            <div class=\"b_text\">\n              <p>{{ class.descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <div class=\"b_text\">\n            <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          </div>\n          <a class=\"alink\" href=\"contacto.html\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"../../static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
