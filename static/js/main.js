@@ -6821,70 +6821,70 @@ function defineReactive(obj, key, val) {
 
 
 var util = Object.freeze({
-	defineReactive: defineReactive,
-	set: set,
-	del: del,
-	hasOwn: hasOwn,
-	isLiteral: isLiteral,
-	isReserved: isReserved,
-	_toString: _toString,
-	toNumber: toNumber,
-	toBoolean: toBoolean,
-	stripQuotes: stripQuotes,
-	camelize: camelize,
-	hyphenate: hyphenate,
-	classify: classify,
-	bind: bind,
-	toArray: toArray,
-	extend: extend,
-	isObject: isObject,
-	isPlainObject: isPlainObject,
-	def: def,
-	debounce: _debounce,
-	indexOf: indexOf,
-	cancellable: cancellable,
-	looseEqual: looseEqual,
-	isArray: isArray,
-	hasProto: hasProto,
-	inBrowser: inBrowser,
-	devtools: devtools,
-	isIE9: isIE9,
-	isAndroid: isAndroid,
-	get transitionProp () { return transitionProp; },
-	get transitionEndEvent () { return transitionEndEvent; },
-	get animationProp () { return animationProp; },
-	get animationEndEvent () { return animationEndEvent; },
-	nextTick: nextTick,
-	query: query,
-	inDoc: inDoc,
-	getAttr: getAttr,
-	getBindAttr: getBindAttr,
-	hasBindAttr: hasBindAttr,
-	before: before,
-	after: after,
-	remove: remove,
-	prepend: prepend,
-	replace: replace,
-	on: on,
-	off: off,
-	setClass: setClass,
-	addClass: addClass,
-	removeClass: removeClass,
-	extractContent: extractContent,
-	trimNode: trimNode,
-	isTemplate: isTemplate,
-	createAnchor: createAnchor,
-	findRef: findRef,
-	mapNodeRange: mapNodeRange,
-	removeNodeRange: removeNodeRange,
-	isFragment: isFragment,
-	getOuterHTML: getOuterHTML,
-	mergeOptions: mergeOptions,
-	resolveAsset: resolveAsset,
-	checkComponentAttr: checkComponentAttr,
-	commonTagRE: commonTagRE,
-	reservedTagRE: reservedTagRE,
-	get warn () { return warn; }
+  defineReactive: defineReactive,
+  set: set,
+  del: del,
+  hasOwn: hasOwn,
+  isLiteral: isLiteral,
+  isReserved: isReserved,
+  _toString: _toString,
+  toNumber: toNumber,
+  toBoolean: toBoolean,
+  stripQuotes: stripQuotes,
+  camelize: camelize,
+  hyphenate: hyphenate,
+  classify: classify,
+  bind: bind,
+  toArray: toArray,
+  extend: extend,
+  isObject: isObject,
+  isPlainObject: isPlainObject,
+  def: def,
+  debounce: _debounce,
+  indexOf: indexOf,
+  cancellable: cancellable,
+  looseEqual: looseEqual,
+  isArray: isArray,
+  hasProto: hasProto,
+  inBrowser: inBrowser,
+  devtools: devtools,
+  isIE9: isIE9,
+  isAndroid: isAndroid,
+  get transitionProp () { return transitionProp; },
+  get transitionEndEvent () { return transitionEndEvent; },
+  get animationProp () { return animationProp; },
+  get animationEndEvent () { return animationEndEvent; },
+  nextTick: nextTick,
+  query: query,
+  inDoc: inDoc,
+  getAttr: getAttr,
+  getBindAttr: getBindAttr,
+  hasBindAttr: hasBindAttr,
+  before: before,
+  after: after,
+  remove: remove,
+  prepend: prepend,
+  replace: replace,
+  on: on,
+  off: off,
+  setClass: setClass,
+  addClass: addClass,
+  removeClass: removeClass,
+  extractContent: extractContent,
+  trimNode: trimNode,
+  isTemplate: isTemplate,
+  createAnchor: createAnchor,
+  findRef: findRef,
+  mapNodeRange: mapNodeRange,
+  removeNodeRange: removeNodeRange,
+  isFragment: isFragment,
+  getOuterHTML: getOuterHTML,
+  mergeOptions: mergeOptions,
+  resolveAsset: resolveAsset,
+  checkComponentAttr: checkComponentAttr,
+  commonTagRE: commonTagRE,
+  reservedTagRE: reservedTagRE,
+  get warn () { return warn; }
 });
 
 var uid = 0;
@@ -12258,11 +12258,11 @@ function extractFragment(nodes, parent) {
 
 
 var compiler = Object.freeze({
-	compile: compile,
-	compileAndLinkProps: compileAndLinkProps,
-	compileRoot: compileRoot,
-	transclude: transclude,
-	resolveSlots: resolveSlots
+  compile: compile,
+  compileAndLinkProps: compileAndLinkProps,
+  compileRoot: compileRoot,
+  transclude: transclude,
+  resolveSlots: resolveSlots
 });
 
 function stateMixin (Vue) {
@@ -14520,29 +14520,29 @@ var __vueify_style__ = require("vueify-insert-css").insert(".Alert {\n  position
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 exports.default = {
-	props: ['type'],
+  props: ['type'],
 
-	data: function data() {
-		return {
-			show: true
-		};
-	},
+  data: function data() {
+    return {
+      show: true
+    };
+  },
 
 
-	computed: {
-		alertClasses: function alertClasses() {
-			var type = this.type;
+  computed: {
+    alertClasses: function alertClasses() {
+      var type = this.type;
 
-			return {
-				'Alert': true,
-				'Alert--Success': type == 'success',
-				'Alert--Error': type == 'error'
-			};
-		}
-	}
+      return {
+        'Alert': true,
+        'Alert--Success': type == 'success',
+        'Alert--Error': type == 'error'
+      };
+    }
+  }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
 ;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div :class=\"alertClasses\" v-show=\"show\">\n\t<slot></slot>\n\n\t<span class=\"Alert__close\" @click=\"show = false\">x</span>\n</div>\n"
@@ -14583,7 +14583,7 @@ exports.default = {
 
   methods: {
     blogHome: function blogHome() {
-      var _url = 'http://162.243.198.204/api/home/';
+      var _url = '/api/home/';
       this.$http({
         url: _url,
         method: 'GET'
@@ -14610,7 +14610,7 @@ exports.default = {
 
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-blog\">\n  <div class=\"b_banner\" style=\"background-image: url(../static/img/ban-blog.jpg)\">\n    <div class=\"b_cell\">\n      <h1>VIDA FITNESS</h1>\n    </div>\n  </div>\n  <div class=\"b_blog\">\n    <div class=\"b_header\">\n      <ul class=\"nav nav-tabs\" role=\"tablist\">\n        <li @click=\"nameFilter = ''\">TODOS</li>\n        <li @click=\"nameFilter = 'Fitnes'\">FITNESS</li>\n        <li @click=\"nameFilter = 'Actualidad'\">ACTUALIDAD</li>\n        <li @click=\"nameFilter = 'Nutricion'\">NUTRICIÓN</li>\n      </ul>\n    </div>\n    <div class=\"b_content\">\n      <p>Vida Fitness aquí encontraras noticias, rutinas, información sobre nutrición y la alimentación adecuadas que podras seguir segun tu estado físico.</p>\n    </div>\n    <div class=\"b_news\">\n      <ul class=\"nav nav_news\">\n        <li v-for=\"blog in blogs | filterBy nameFilter in 'categoria' | limitBy limite\" transition=\"blog\">\n          <a href=\"bloginterior.html\">\n            <div class=\"bg-zoom\" :style=\"'background-image: url('+blog.imagen_frase+')'\"></div>\n            <p><span :class=\"classCategory(blog.categoria)\">{{blog.categoria}}</span> / {{ blog.fecha }}</p>\n            <div class=\"b_cell\">\n              <h3>{{ blog.titulo }}</h3>\n            </div>\n          </a>\n        </li>\n        <li>\n          <button type=\"button\" class=\"more-blog\" @click=\"limite = limite + 5\">\n            <div class=\"b_cell\" style=\"display: block;\">\n              <h3>más</h3>\n            </div>\n          </button>\n        </li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          <a class=\"alink\" href=\"contacto.html\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"../static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-blog\">\n  <div class=\"b_banner\" style=\"background-image: url(../static/img/ban-blog.jpg)\">\n    <div class=\"b_cell\">\n      <h1>VIDA FITNESS</h1>\n    </div>\n  </div>\n  <div class=\"b_blog\">\n    <div class=\"b_header\">\n      <ul class=\"nav nav-tabs\" role=\"tablist\">\n        <li @click=\"nameFilter = ''\">TODOS</li>\n        <li @click=\"nameFilter = 'Fitnes'\">FITNESS</li>\n        <li @click=\"nameFilter = 'Actualidad'\">ACTUALIDAD</li>\n        <li @click=\"nameFilter = 'Nutricion'\">NUTRICIÓN</li>\n      </ul>\n    </div>\n    <div class=\"b_content\">\n      <p>Vida Fitness aquí encontraras noticias, rutinas, información sobre nutrición y la alimentación adecuadas que podras seguir segun tu estado físico.</p>\n    </div>\n    <div class=\"b_news\">\n      <ul class=\"nav nav_news\">\n        <li v-for=\"blog in blogs | filterBy nameFilter in 'categoria' | limitBy limite\" transition=\"blog\">\n          <a href=\"bloginterior.html\">\n            <div class=\"bg-zoom\" :style=\"'background-image: url('+blog.imagen_frase+')'\"></div>\n            <p><span :class=\"classCategory(blog.categoria)\">{{blog.categoria}}</span> / {{ blog.fecha }}</p>\n            <div class=\"b_cell\">\n              <h3>{{ blog.titulo }}</h3>\n            </div>\n          </a>\n        </li>\n        <li>\n          <button type=\"button\" class=\"more-blog\" @click=\"limite = limite + 5\">\n            <div class=\"b_cell\" style=\"display: block;\">\n              <h3>más</h3>\n            </div>\n          </button>\n        </li>\n      </ul>\n    </div>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          <a class=\"alink\" href=\"/contactanos\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"../static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -14648,7 +14648,7 @@ exports.default = {
 
   methods: {
     getBlog: function getBlog() {
-      var _url = 'http://162.243.198.204/api/blog/' + this.id_blog + '/' + this.slug_blog;
+      var _url = '/api/blog/' + this.id + '/' + this.slug;
       console.log(_url);
       this.$http({
         url: _url,
@@ -14683,6 +14683,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
+  props: ['base_url'],
+
   data: function data() {
     return {
       class: []
@@ -14697,13 +14699,15 @@ exports.default = {
 
     fetchBrand: function fetchBrand() {
       //var _url = 'http://tienda-hero.herokuapp.com/api/brand/'
-      var _url = 'http://162.243.198.204/api/clases/';
+      console.log(this.base_url)
+      var _url = '/api/clases/';
       this.$http({
         url: _url,
         method: 'GET'
       }).then(function (success) {
         this.class = success.data[0];
-        console.log(success);
+        console.log(success)
+        console.log(this.class);
       }, function (error) {
         console.log(error);
       });
@@ -14712,7 +14716,7 @@ exports.default = {
 
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-service\">\n  <div class=\"b_banner\" style=\"background-image: url(../static/img/ban-clases.jpg)\">\n    <div class=\"b_cell\">\n      <h1>CLASES</h1>\n    </div>\n  </div>\n  <div class=\"b_link\">\n    <div class=\"b_subtitle\">\n      <h2>\"NO ES UNA META ES UN ESTILO DE VIDA. SOLO TU DECIDES SI CAMBIA O NO.\"</h2>\n    </div>\n    <ul class=\"nav nav_link\">\n      <li>\n        <a href=\"clasesinterior1.html\" :style=\"'background-image: url('+class.deportes_imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>DEPORTES DE CONTACTO</h3>\n            <div class=\"b_text\">\n              <p>{{ class.deportes_descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"clasesinterior1.html\" :style=\"'background-image: url('+class.bestcycling_imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>BEST CYCLING</h3>\n            <div class=\"b_text\">\n              <p>{{ class.bestcycling_descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"clasesinterior1.html\" :style=\"'background-image: url('+class.aerobicos_imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>AERÓBICOS</h3>\n            <div class=\"b_text\">\n              <p>{{ class.aerobicos_descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"clasesinterior1.html\" :style=\"'background-image: url('+class.talleres_imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>TALLER</h3>\n            <div class=\"b_text\">\n              <p>{{ class.talleres_descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <div class=\"b_text\">\n            <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          </div>\n          <a class=\"alink\" href=\"contacto.html\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"../static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-service\">\n  <div class=\"b_banner\" style=\"background-image: url({{ class.imagen }})\">\n    <div class=\"b_cell\">\n      <h1>CLASES</h1>\n    </div>\n  </div>\n  <div class=\"b_link\">\n    <div class=\"b_subtitle\">\n      <h2>\"{{ class.lema }}\"</h2>\n    </div>\n    <ul class=\"nav nav_link\">\n      <li>\n        <a href=\"/clases/deportes-de-contacto/\" :style=\"'background-image: url('+class.deportes_imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>DEPORTES DE CONTACTO</h3>\n            <div class=\"b_text\">\n              <p>{{ class.deportes_descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"/clases/bestcicling/\" :style=\"'background-image: url('+class.bestcycling_imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>BEST CYCLING</h3>\n            <div class=\"b_text\">\n              <p>{{ class.bestcycling_descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"/clases/aerobicos/\" :style=\"'background-image: url('+class.aerobicos_imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>AERÓBICOS</h3>\n            <div class=\"b_text\">\n              <p>{{ class.aerobicos_descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"/clases/talleres/\" :style=\"'background-image: url('+class.talleres_imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>TALLER</h3>\n            <div class=\"b_text\">\n              <p>{{ class.talleres_descripcion }} A</p>\n            </div>\n          </div>\n        </a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <div class=\"b_text\">\n            <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          </div>\n          <a class=\"alink\" href=\"/contactanos\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"../static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -14747,7 +14751,7 @@ exports.default = {
   methods: {
 
     getClassInt: function getClassInt() {
-      var _url = 'http://162.243.198.204/api/' + this.class_name + '/' + this.class_id + '/' + this.class_type;
+      var _url = '/api/' + this.class_name + '/' + this.class_id + '/' + this.class_type;
       this.$http({
         url: _url,
         method: 'GET'
@@ -14800,28 +14804,55 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = {
 
-  props: ['name_class'],
+  //props: ['name_class'],
 
   data: function data() {
     return {
-      classList: []
+      classList: [],
+      name_class: ''
     };
   },
   created: function created() {
-    this.fetchBrand();
+    this.nameClass();
   },
 
 
   methods: {
+    nameClass: function nameClass() {
+      var slug = window.location.href.split('/');
+      console.log(slug)
+      this.name_class = slug[slug.length - 2]
+      console.log("nameClass", this.name_class);
+      this.fetchBrand();
+    },
 
     fetchBrand: function fetchBrand() {
-      var _url = 'http://162.243.198.204/api/' + this.name_class;
+      var _url = '/api/' + this.name_class;
+      
       this.$http({
         url: _url,
         method: 'GET'
       }).then(function (success) {
-        this.classList = success.data;
-        console.log(success);
+
+        var Data = success.data
+        
+        //var New_arr = []
+
+
+        //for (var i = Data.length - 1 ; i >= 1; i--) {
+         // New_arr[i] = Data[i]
+        //}
+
+        //console.log(New_arr)
+
+        //for (var i = 1 ; i <= New_arr.length - 1; i++) {
+          //console.log(New_arr[i]);
+        //}
+
+        this.classList = Data;
+
+        //console.log(this.classList)
+
       }, function (error) {
         console.log(error);
       });
@@ -14830,7 +14861,7 @@ exports.default = {
 
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-service\">\n  <div class=\"b_banner b_border\" style=\"background-image: url(static/img/ban-clasint1.jpg)\">\n    <div class=\"b_cell\">\n      <h1>DEPORTE DE CONTACTO</h1>\n    </div>\n  </div>\n  <div class=\"b_link\">\n    <div class=\"b_subtitle\">\n      <h2>\"CAMBIA TU MENTE Y CAMBIARA TU CUERPO\"</h2>\n    </div>\n    <ul class=\"nav nav_link\">\n      <li v-for=\"class of classList\">\n        <a href=\"clasesinterior2.html\" :style=\"'background-image: url('+class.imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>{{ class.tipo }}</h3>\n            <div class=\"b_text\">\n              <p>{{ class.descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <div class=\"b_text\">\n            <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          </div>\n          <a class=\"alink\" href=\"contacto.html\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-service\">\n  <div class=\"b_banner b_border\" style=\"background-image: url({{ classList[0].imagen }})\">\n    <div class=\"b_cell\">\n      <h1> {{ classList[0].titulo }} </h1>\n    </div>\n  </div>\n  <div class=\"b_link\">\n    <div class=\"b_subtitle\">\n      <h2>\"{{ classList[0].descripcion }}\"</h2>\n    </div>\n    <ul class=\"nav nav_link\">\n      <li v-for=\"class of classList\">\n        <a href=\"/clases/{{ name_class }}/{{ class.id }}\" :style=\"'background-image: url('+class.imagen+')'\">\n          <div class=\"b_cell\">\n            <h3>{{ class.tipo }}</h3>\n            <div class=\"b_text\">\n              <p>{{ class.descripcion }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <div class=\"b_text\">\n            <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          </div>\n          <a class=\"alink\" href=\"contacto.html\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -14872,7 +14903,7 @@ exports.default = {
 
     onSubmitForm: function onSubmitForm(e) {
       e.preventDefault();
-      var _url = 'http://162.243.198.204/api/contactanos/';
+      var _url = '/api/contactanos/';
       if (this.afiliado == 'si') {
         this.contact.afiliado = true;
       } else if (this.afiliado == 'no') {
@@ -14932,7 +14963,7 @@ exports.default = {
 
   methods: {
     sliders: function sliders() {
-      var _url = 'http://162.243.198.204/api/ruleta/';
+      var _url = '/api/ruleta/';
       this.$http({
         url: _url,
         method: 'GET'
@@ -14945,7 +14976,7 @@ exports.default = {
     },
 
     blogHome: function blogHome() {
-      var _url = 'http://162.243.198.204/api/home/';
+      var _url = '/api/home/';
       this.$http({
         url: _url,
         method: 'GET'
@@ -15011,12 +15042,13 @@ exports.default = {
 
     fetchBrand: function fetchBrand() {
       console.log(this.base_url);
-      var _url = 'http://162.243.198.204/api/servicios/';
+      var _url = '/api/servicios/';
       this.$http({
         url: _url,
         method: 'GET'
       }).then(function (success) {
         this.service = success.data[0];
+
         console.log(this.service);
       }, function (error) {
         console.log(error);
@@ -15026,7 +15058,7 @@ exports.default = {
 
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-service\">\n  <div class=\"b_banner\" :style=\"'background-image: url(../static/img/ban-serv.jpg)'\">\n    <div class=\"b_cell\">\n      <h1>SERVICIOS</h1>\n    </div>\n  </div>\n  <div class=\"b_link\">\n    <div class=\"b_subtitle\">\n      <h2>{{ service.lema }}</h2>\n    </div>\n    <ul class=\"nav nav_link\">\n      <li>\n        <a href=\"/servicios/entrenar\" :style=\"'background-image: url('+ service.entrenar_imagen +')'\">\n          <div class=\"b_cell\">\n            <h3>ENTRENAR</h3>\n            <div class=\"b_text\">\n              <p>{{ service.entrenar_lema }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"/servicios/nutricion\" :style=\"'background-image: url('+ service.nutricion_imagen +')'\">\n          <div class=\"b_cell\">\n            <h3>NUTRICIÓN</h3>\n            <div class=\"b_text\">\n              <p>{{ service.nutricion_lema }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"/servicios/convenio\" :style=\"'background-image: url('+ service.convenio_imagen +')'\">\n          <div class=\"b_cell\">\n            <h3>CONVENIOS</h3>\n            <div class=\"b_text\">\n              <p>{{ service.convenio_lema }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <div class=\"b_text\">\n            <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          </div>\n          <a class=\"alink\" href=\"/contactanos/\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"../static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<section class=\"section-service\">\n  <div class=\"b_banner\" :style=\"'background-image: url('+ service.imagen +')'\">\n    <div class=\"b_cell\">\n      <h1>SERVICIOS</h1>\n    </div>\n  </div>\n  <div class=\"b_link\">\n    <div class=\"b_subtitle\">\n      <h2>{{ service.lema }}</h2>\n    </div>\n    <ul class=\"nav nav_link\">\n      <li>\n        <a href=\"/servicios/entrenar\" :style=\"'background-image: url('+ service.entrenar_imagen +')'\">\n          <div class=\"b_cell\">\n            <h3>ENTRENAR</h3>\n            <div class=\"b_text\">\n              <p>{{ service.entrenar_lema }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"/servicios/nutricion\" :style=\"'background-image: url('+ service.nutricion_imagen +')'\">\n          <div class=\"b_cell\">\n            <h3>NUTRICIÓN</h3>\n            <div class=\"b_text\">\n              <p>{{ service.nutricion_lema }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a href=\"/servicios/convenio\" :style=\"'background-image: url('+ service.convenio_imagen +')'\">\n          <div class=\"b_cell\">\n            <h3>CONVENIOS</h3>\n            <div class=\"b_text\">\n              <p>{{ service.convenio_lema }}</p>\n            </div>\n          </div>\n        </a>\n      </li>\n    </ul>\n  </div>\n  <div class=\"b_contact\">\n    <div class=\"row b_atention\">\n      <div class=\"container\">\n        <div class=\"col-xs-12 col-md-6\">\n          <h3>SERVICIOS AL CLIENTE</h3>\n          <div class=\"b_text\">\n            <p>Si quieres contactarnos dejanos tus datos e indicanos como podemos ayudarte. Nos encantara hacerlo.</p>\n          </div>\n          <a class=\"alink\" href=\"/contactanos/\">Contáctenos</a>\n        </div>\n        <div class=\"col-xs-12 col-md-6 hidden-xs hidden-sm\">\n          <img class=\"img-responsive\" src=\"../static/img/contact2.png\" alt=\"\">\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -15065,7 +15097,7 @@ exports.default = {
       this.type_service = slug;
       console.log(this.type_service);
       console.log(slug[slug.length - 2]);
-      var _url = 'http://162.243.198.204/api/' + slug[slug.length - 2];
+      var _url = '/api/' + slug[slug.length - 2];
       this.$http({
         url: _url,
         method: 'GET'
@@ -15125,7 +15157,7 @@ exports.default = {
 
     onSubmitForm: function onSubmitForm(e) {
       e.preventDefault();
-      var _url = 'http://162.243.198.204/api/invita/';
+      var _url = '/api/invita/';
 
       console.log(this.usuario);
       if (this.usuario.invitar) {

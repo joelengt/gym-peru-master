@@ -69,6 +69,8 @@ class BlogView(TemplateView):
 class ClasesView(TemplateView):
     template_name = 'clases.html'
 
+class ClasesInteriorView(TemplateView):
+    template_name = 'clasesinterior.html'
 
 class ContactanosView(TemplateView):
     template_name = 'contacto.html'
@@ -76,3 +78,6 @@ class ContactanosView(TemplateView):
 
 class VisitanosView(TemplateView):
     template_name = 'visitanos.html'
+
+class ClasesInterior2View(TemplateView):
+    template_name = 'clasesinterior2.html'
