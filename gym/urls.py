@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.conf.urls import url, include, patterns
 from django.contrib import admin
-from apps.blog.views import IndexView, ServiciosView, ClasesView, BlogView,VisitanosView,ContactanosView,ServiciosInteriorView,ClasesInteriorView,ClasesInterior2View
+from apps.blog.views import IndexView, ServiciosView, ClasesView, BlogView,VisitanosView,ContactanosView,ServiciosInteriorView,ClasesInteriorView,ClasesInterior2View,BlogInteriorView
 
 urlpatterns = [
     # url(r'^tinymce/', include('tinymce.urls')),
@@ -42,9 +42,9 @@ urlpatterns = [
     url(r'^clases/talleres/3$', ClasesInterior2View.as_view(), name='clases-interior2'),
     url(r'^clases/talleres/4$', ClasesInterior2View.as_view(), name='clases-interior2'),
     url(r'^blog/$', BlogView.as_view(), name='blog'),
+    url(r'^blog/(?P<pk>\d+)/(?P<slug>[\w-]+)/$', BlogInteriorView.as_view(), name='blog-interior'),
     url(r'^visitanos/$', VisitanosView.as_view(), name='visitanos'),
     url(r'^contactanos/$', ContactanosView.as_view(), name='contactanos'),
-
 ]
 if settings.DEBUG:
     urlpatterns += patterns('',
