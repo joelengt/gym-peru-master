@@ -11392,6 +11392,7 @@ body {
 }
 .section-service .b_banner.b_border .b_cell h1 {
   background-color: transparent;
+  text-transform: uppercase;
 }
 .section-service .b_banner.b_detail {
   height: 350px;
