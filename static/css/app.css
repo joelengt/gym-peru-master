@@ -11392,12 +11392,14 @@ body {
 }
 .section-service .b_banner.b_border .b_cell h1 {
   background-color: transparent;
+  text-transform: uppercase;
 }
 .section-service .b_banner.b_detail {
   height: 350px;
 }
 .section-service .b_banner.b_detail .b_cell h1 {
   background-color: transparent;
+  color: white;
 }
 .section-service .b_banner .b_cell {
   display: table-cell;
