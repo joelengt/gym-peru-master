@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/root/gymperu/gymperu"
+VIRTUAL_ENV="/home/baudelaire/Escritorio/newgym/gymperu"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

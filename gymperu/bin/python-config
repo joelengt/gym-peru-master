@@ -1,4 +1,4 @@
-#!/root/gymperu/gymperu/bin/python
+#!/home/baudelaire/Escritorio/newgym/gymperu/bin/python
 
 import sys
 import getopt
