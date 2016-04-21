@@ -11467,6 +11467,11 @@ body {
   padding: 50px 0;
   text-align: center;
 }
+
+/*.section-service .b_link .b_text{
+  background-color: 
+}*/
+
 .section-service .b_link .b_description .b_text {
   width: 95%;
   margin: 0 auto;
