@@ -11487,6 +11487,13 @@ body {
   font-size: 22px;
   color: #FFC900;
   font-style: italic;
+  margin-bottom: 1em;
+}
+.section-service .b_link .b_description .b_text .color:after{
+  content: '"'
+}
+.section-service .b_link .b_description .b_text .color:before{
+  content: '"';
 }
 .section-service .b_link .b_description .b_text .mg-t {
   margin-top: 40px;
