@@ -57,7 +57,7 @@ class DeportesDeContacto(models.Model):
 class Aerobicos(models.Model):
     titulo=models.CharField(max_length=15,default="Aerobicos")
     tipo = models.CharField(max_length=30, choices=(
-        ("PRINCIPAL", "PRINCIPAL"), ('X-BOX', 'X-BOX'), ('FULL DAY', 'FULL DAY'), ('E-FITH', 'E-FITH'),
+        ("PRINCIPAL", "PRINCIPAL"), ('X-BOX', 'X-BOX'), ('FULL BODY', 'FULL BODY'), ('E-FITH', 'E-FITH'),
         ('AERODANCE', 'AERODANCE'), ('BODY-FIT', 'BODY-FIT'), ('BAILE', 'BAILE'), ('LOCALIZADO', 'LOCALIZADO'),
         ('STEP LOCAL', 'STEP LOCAL')),
                             unique=True)
