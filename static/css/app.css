@@ -11311,6 +11311,11 @@ body {
   font-size: 18px;
   font-weight: 700;
   margin: 35px 0 0;
+  transition: .2s;
+}
+.section-free .b_form .content_form .b_block .btn-submit:active{
+  background-color: #FDE517;
+  transform: scale(1.2, 1.2);
 }
 .section-free .b_form .content_form .b_block .btn-submit:hover, .section-free .b_form .content_form .b_block .btn-submit:focus {
   outline: 0;
@@ -11881,6 +11886,11 @@ body {
   font-size: 18px;
   font-weight: 700;
   margin: 35px 0 0;
+  transition: .2s;
+}
+.section-contact .b_form .content_form .b_block .btn-submit:active{
+  background-color: #FDE517;
+  transform: scale(1.2, 1.2);
 }
 .section-contact .b_form .content_form .b_block .btn-submit:hover, .section-contact .b_form .content_form .b_block .btn-submit:focus {
   outline: 0;
