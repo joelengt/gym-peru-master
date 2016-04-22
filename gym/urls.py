@@ -37,6 +37,7 @@ urlpatterns = [
     url(r'^clases/aerobicos/6$', ClasesInterior2View.as_view(), name='clases-interior2'),
     url(r'^clases/aerobicos/7$', ClasesInterior2View.as_view(), name='clases-interior2'),
     url(r'^clases/aerobicos/8$', ClasesInterior2View.as_view(), name='clases-interior2'),
+    url(r'^clases/aerobicos/9$', ClasesInterior2View.as_view(), name='clases-interior2'),
     url(r'^clases/talleres/1$', ClasesInterior2View.as_view(), name='clases-interior2'),
     url(r'^clases/talleres/2$', ClasesInterior2View.as_view(), name='clases-interior2'),
     url(r'^clases/talleres/3$', ClasesInterior2View.as_view(), name='clases-interior2'),
