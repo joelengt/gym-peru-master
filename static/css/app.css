@@ -10472,7 +10472,7 @@ body {
   padding: 12px 0;
   letter-spacing: 1px;
 }
-.footer .footer-bottom .copy-right {
+.footer .footer-bottom .copy-right a{
   text-decoration: none;
   color: white;
 }
