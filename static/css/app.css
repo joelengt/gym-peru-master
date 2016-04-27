@@ -10472,6 +10472,10 @@ body {
   padding: 12px 0;
   letter-spacing: 1px;
 }
+.footer .footer-bottom .copy-right {
+  text-decoration: none;
+  color: white;
+}
 body {
   -webkit-backface-visibility: hidden;
 }
