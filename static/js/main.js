@@ -14929,6 +14929,9 @@ exports.default = {
         this.contact.afiliado = false;
       }
       console.log(this.contact);
+      var contentForm = document.querySelector('.b_block')
+      var div = document.createElement('div');
+      var template = '';
 
       $('#modalSubmit').button('loading');
       this.$http({
@@ -14936,10 +14939,39 @@ exports.default = {
         method: 'POST',
         data: this.contact
       }).then(function (success) {
-        console.log(success);
-        $('#modalSubmit').button('reset');
+        this.contact = {}
+        if (document.getElementById('msg')) {
+          document.getElementById('msg').remove()
+          var div = document.createElement('div')
+          template = '<p id="msg">Se han enviado los datos correctamente 😎</p>';
+          div.innerHTML = template;
+          contentForm.appendChild(div)
+          document.getElementById('msg').style.color = '#259614';
+          document.getElementById('msg').style.paddingTop = '1em';
+          document.getElementById('msg').style.textAlign = 'left';
+          document.getElementById('msg').style.fontSize = '18px';
+          document.getElementById('msg').style.fontWeight = '500';
+        } else {
+          template = '<p id="msg">Se han enviado los datos correctamente 😎</p>';
+          div.innerHTML = template;
+          contentForm.appendChild(div)
+          document.getElementById('msg').style.color = '#259614';
+          document.getElementById('msg').style.paddingTop = '1em';
+          document.getElementById('msg').style.textAlign = 'left';
+          document.getElementById('msg').style.fontSize = '18px';
+          document.getElementById('msg').style.fontWeight = '500';
+        }
       }, function (error) {
-        console.log(error);
+        if (!document.getElementById('msg')) {
+          template = '<p id="msg">Ocurrió algo! ☹ <br> Por favor llena los campos correctamente.</p>';
+          div.innerHTML = template;
+          contentForm.appendChild(div)
+          document.getElementById('msg').style.color = '#c70000';
+          document.getElementById('msg').style.paddingTop = '1em';
+          document.getElementById('msg').style.textAlign = 'left';
+          document.getElementById('msg').style.fontSize = '18px';
+          document.getElementById('msg').style.fontWeight = '500';
+        }
         $('#modalSubmit').button('reset');
       });
     }
@@ -15177,22 +15209,62 @@ exports.default = {
     onSubmitForm: function onSubmitForm(e) {
       e.preventDefault();
       var _url = '/api/invita/';
-
-      console.log(this.usuario);
       if (this.usuario.invitar) {
         this.usuario = jQuery.extend(this.usuario, this.invitado);
       }
+
+      var contentForm = document.querySelector('.b_block')
+      var div = document.createElement('div');
+      var template = '';
+
+      //console.log(this.usuario)
       $('#modalSubmit').button('loading');
       this.$http({
         url: _url,
         method: 'POST',
         data: this.usuario
       }).then(function (success) {
-        console.log(success);
+        this.usuario = {}
+        if (document.getElementById('msg')) {
+          document.getElementById('msg').remove()
+          var div = document.createElement('div')
+          template = '<p id="msg">Se han enviado los datos correctamente 😎</p>';
+          div.innerHTML = template;
+          contentForm.appendChild(div)
+          document.getElementById('msg').style.color = '#259614';
+          document.getElementById('msg').style.paddingTop = '1em';
+          document.getElementById('msg').style.textAlign = 'left';
+          document.getElementById('msg').style.fontSize = '18px';
+          document.getElementById('msg').style.fontWeight = '500';
+        } else {
+          template = '<p id="msg">Se han enviado los datos correctamente 😎</p>';
+          div.innerHTML = template;
+          contentForm.appendChild(div)
+          document.getElementById('msg').style.color = '#259614';
+          document.getElementById('msg').style.paddingTop = '1em';
+          document.getElementById('msg').style.textAlign = 'left';
+          document.getElementById('msg').style.fontSize = '18px';
+          document.getElementById('msg').style.fontWeight = '500';
+        }
 
         $('#modalSubmit').button('reset');
       }, function (error) {
-        console.log(error);
+        if (!document.getElementById('msg')) {
+          template = '<p id="msg">Ocurrió algo! ☹ <br> Por favor llena los campos correctamente.</p>';
+          div.innerHTML = template;
+          contentForm.appendChild(div)
+          document.getElementById('msg').style.color = '#c70000';
+          document.getElementById('msg').style.paddingTop = '1em';
+          document.getElementById('msg').style.textAlign = 'left';
+          document.getElementById('msg').style.fontSize = '18px';
+          document.getElementById('msg').style.fontWeight = '500';
+        }
+
+
+        /*setTimeout(function(){
+          div.remove()
+        }, 5000);*/
+
         $('#modalSubmit').button('reset');
       });
     }

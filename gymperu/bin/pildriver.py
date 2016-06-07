@@ -1,4 +1,4 @@
-#!/root/gymperu/gymperu/bin/python3
+#!/home/baudelaire/Desktop/coder/coder-clients/gymMistesFItnest/gymperu/bin/python3
 """PILdriver, an image-processing calculator using PIL.
 
 An instance of class PILDriver is essentially a software stack machine

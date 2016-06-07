@@ -1,0 +1,508 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"fontWeight	Style CSS"
+			],
+			[
+				"text",
+				"textAlign	Style CSS"
+			],
+			[
+				"padding",
+				"paddingTop	Style CSS"
+			],
+			[
+				"getE",
+				"getElementById(id)	Element"
+			],
+			[
+				"innert",
+				"innerHTML	Element"
+			],
+			[
+				"le",
+				"length	String"
+			],
+			[
+				"preguntas",
+				"preguntas_muestra"
+			],
+			[
+				"l",
+				"length	String"
+			],
+			[
+				"CURSO",
+				"curso"
+			],
+			[
+				"course",
+				"courseEnglish"
+			],
+			[
+				"getClass",
+				"getClassInt"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"New",
+				"New_arr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "static/js/main.js",
+			"settings":
+			{
+				"buffer_size": 425883,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 96.0,
+		"last_filter": "package control: insta",
+		"selected_items":
+		[
+			[
+				"package control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/baudelaire/Desktop/coder/coder-clients/gymMistesFItnest",
+		"/home/baudelaire/Desktop/coder/coder-clients/gymMistesFItnest/static",
+		"/home/baudelaire/Desktop/coder/coder-clients/gymMistesFItnest/static/js"
+	],
+	"file_history":
+	[
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/payment/social_interaction.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/plataforma/cursos/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/routes/plataforma/payment/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/public/js/facebook_friends.js",
+		"/home/baudelaire/Desktop/coder/ascent/public/Facebook friends.js",
+		"/home/baudelaire/Desktop/coder/ascent/lib/js/simulador_build.js",
+		"/home/baudelaire/Desktop/coder/ascent/public/text.html",
+		"/home/baudelaire/Desktop/coder/ascent/public/view/texto_payment.html",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/textos/friends_facebook/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/controllers/facebook_invitable_friends/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/routes/plataforma/diplomados/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/audio-libros/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/payment/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/controllers/login/passport.js",
+		"/home/baudelaire/Desktop/ACCESS mlab.txt",
+		"/home/baudelaire/Desktop/coder/ascent/config.js",
+		"/home/baudelaire/Desktop/coder/ascent/routes/admin/cursos/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/textos/texto-item/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/textos/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/audio-libros/reproductor/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/simulador/muestra/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/simulador/intermedio/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/simulador/basico/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/simulador/avanzado/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/simulador/muestra/lecciones.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/simulador/avanzado/lecciones.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/simulador/intermedio/lecciones.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/simulador/basico/lecciones.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/simulador/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/admin/preguntas/cursos/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/models/preguntas/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/cursos/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/models/cursos/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/cursos/update/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/cursos/detalles/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/curso-item.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/cursos/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/admin/preguntas/diplomados/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/routes/admin/preguntas/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/cursos/update/update_form_images.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/cursos/update/untitled.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/simulador/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/models/diplomados/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/diplomados/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/cursos/detalles/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/diplomados/update/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/diplomados/detalles/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/cursos/update/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/diplomados/detalles/question_images.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/cursos/detalles/question_images.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/diplomados/create/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/diplomados/delete/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/index.jade",
+		"/home/baudelaire/Desktop/untitled.html",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/cursos/delete/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/plataforma/start/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/perfil/edit.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/plataforma/perfil/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/routes/admin/usuarios/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/cursos/create/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/cursos/create/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/cursos/update/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/preguntas/create/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/admin/preguntas/diplomados.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/diplomados/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/diplomados/diplomado-item.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/diplomados/textos/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/diplomados/textos/texto-item/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/cursos/delete/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/diplomados/delete/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/diplomados/detalles/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/diplomados/update/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/diplomados/audio-libros/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/diplomados/simulador/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/plataforma/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/diplomados/create/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/admin/diplomados/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/admin/dashboard/diplomados/index.jade",
+		"/home/baudelaire/Desktop/textos/Onstitución anexicore del mundo penal desde 1993 Responive WEb Desing .html",
+		"/home/baudelaire/Desktop/creditcard-flat.png",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/cursos_diplomados/cursos/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/admin/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/models/usuarios/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/bienvenida/index.jade",
+		"/home/baudelaire/Desktop/coder/ascent/routes/login/index.js",
+		"/home/baudelaire/Desktop/coder/ascent/views/plataforma/perfil/index.jade",
+		"/home/baudelaire/Escritorio/coder/ascent/controllers/login/passport.js",
+		"/home/baudelaire/Escritorio/coder/ascent/routes/admin/cursos/index.js",
+		"/home/baudelaire/Escritorio/newgym/apps/clases/urls.py",
+		"/home/baudelaire/Escritorio/newgym/static/js/main.js",
+		"/home/baudelaire/Escritorio/newgym/gym/urls.py",
+		"/home/baudelaire/Escritorio/practice/index.html",
+		"/home/baudelaire/Escritorio/practice/js/code.js",
+		"/home/baudelaire/Escritorio/perugym/apps/clases/urls.py",
+		"/home/baudelaire/Escritorio/perugym/static/js/main.js",
+		"/home/baudelaire/Escritorio/perugym/apps/blog/views.py",
+		"/home/baudelaire/Escritorio/perugym/gym/urls.py",
+		"/home/baudelaire/Escritorio/perugym/templates/bloginterior.html",
+		"/home/baudelaire/Escritorio/perugym/templates/clasesinterior2.html",
+		"/home/baudelaire/Escritorio/perugym/gym/settings/production.py",
+		"/home/baudelaire/Escritorio/perugym/templates/clasesinterior.html",
+		"/home/baudelaire/Escritorio/perugym/templates/serviciointerior.html",
+		"/home/baudelaire/Escritorio/perugym/templates/servicios.html",
+		"/home/baudelaire/Escritorio/perugym/templates/clases.html",
+		"/home/baudelaire/Escritorio/static/index.html",
+		"/home/baudelaire/Escritorio/perugym/fabfile.py",
+		"/home/baudelaire/Escritorio/perugym/static/css/app.css",
+		"/home/baudelaire/Escritorio/perugym/templates/index.html",
+		"/home/baudelaire/Escritorio/perugym/static/css/app.min.css",
+		"/home/baudelaire/Escritorio/perugym/static/js/app.js",
+		"/home/baudelaire/Escritorio/gym/static/js/app.js",
+		"/home/baudelaire/Escritorio/perugym/static/js/app.min.js",
+		"/home/baudelaire/Escritorio/static/app/js/app.js",
+		"/home/baudelaire/Escritorio/perugym/gym/settings/local.py",
+		"/home/baudelaire/Escritorio/perugym/gym/settings/base.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"content_form",
+			"res.send",
+			";",
+			"&",
+			"gt",
+			"&lt",
+			"audios",
+			"muestra",
+			"intermedio",
+			"basico",
+			"muestra",
+			"Intermediario",
+			"intermediario",
+			"Intermediario",
+			"intermediario",
+			"basico",
+			"id",
+			"muestra",
+			"nivel",
+			"Nivel",
+			"nivel",
+			"muestra",
+			"Muestra",
+			"muestra",
+			"Muestra",
+			"muestra",
+			"simulador_muestra",
+			"data",
+			"simulador_muestra",
+			"m",
+			"h",
+			"pregunas_nivel_random",
+			"lecciones_muestra",
+			"preguntas_muestra",
+			"muestra",
+			"muesra",
+			"avanzado",
+			"muestra",
+			"Iniciar",
+			"preguntas_",
+			"intermedio",
+			"basico",
+			"basico ",
+			"basico",
+			"muestra",
+			"limite_preguntas_preguntas_muestra",
+			"muestra",
+			"limite_preguntas_lecciones_muestra",
+			"intermedio",
+			"Things",
+			"muestra",
+			"avanzado",
+			"intermedio",
+			"basico",
+			"muestra",
+			"basico",
+			"muestra",
+			"basico",
+			"basica",
+			"muestra",
+			"cursos",
+			"other_answers_pregunta",
+			"Things",
+			"pregunta_tipos",
+			"type_question",
+			"curso",
+			"Curso",
+			"curso",
+			"cursos",
+			"curso",
+			"diplomados",
+			"diplomado",
+			"curso",
+			"cursos",
+			"diplomados",
+			"answer02",
+			"answer01",
+			"usuario",
+			"service",
+			"Data",
+			"section-service",
+			"blog",
+			"class_NameId",
+			"HEAD",
+			"bestcicling",
+			"deportes-de-contacto",
+			"classList",
+			"section-service",
+			"services",
+			"service-",
+			"telacomes",
+			"section-service",
+			"service",
+			"service-",
+			"section-service",
+			"/api/blog/",
+			"\n      ",
+			"/';\n",
+			"http://159.203.120.218",
+			"http",
+			"section-service",
+			"162.243.198.204",
+			"http://",
+			"162.243.198.204",
+			"127.0.0.1:8000",
+			"127",
+			"127.0.0.1:8000",
+			"service",
+			"section-service",
+			"img",
+			"contact2",
+			"app",
+			"img",
+			"contact2",
+			"slides",
+			"apple",
+			"url",
+			"http",
+			"item",
+			"active",
+			"media",
+			"http://159.203.120.218",
+			"element",
+			"home"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "static/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 425883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415872,
+								415872
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 297174.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "run.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
